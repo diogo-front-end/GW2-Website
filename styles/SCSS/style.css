@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/*font-family: 'Montserrat', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+@font-face {
+  font-family: cubano;
+  src: url(/styles/Fonts/Cubano.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 10px;
+}
+
+#image-intro {
+  width: 100%;
+}
+
+.image-alt {
+  letter-spacing: .8px;
+  text-align: center;
+  font-family: roboto, sans-serif;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  background-color: black;
+  opacity: 0.75;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+}
+
+.team {
+  color: white;
+  text-decoration: underline;
+  -webkit-text-decoration-color: orange;
+          text-decoration-color: orange;
+  text-decoration-thickness: 2px;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: #1a1a1a 0px 2px .8px;
+}
+
+.h1-intro {
+  font-family: cubano;
+  letter-spacing: .25rem;
+  font-size: 3rem;
+  margin: 0%;
+}
+
+.p-intro {
+  font-family: cubano;
+  font-size: 1.65rem;
+  margin-top: 12px;
+  letter-spacing: .06rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar a {
+  top: 0%;
+  color: white;
+  font-family: cubano;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-right: 35px;
+  padding-left: 35px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.navbar a:hover {
+  color: #bdbdbd;
+  -webkit-transform: translateY(-2.5px);
+          transform: translateY(-2.5px);
+}
+
+.transform-ef {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.transform-ef:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.fa-solid {
+  color: white;
+}
+
+hr {
+  border: 1px solid white;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */
