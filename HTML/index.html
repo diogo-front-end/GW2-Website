@@ -8,37 +8,60 @@
     <script src="https://kit.fontawesome.com/7bfee9897b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/SCSS/style.css">
     <link rel="stylesheet" href="/styles/SCSS/DRY/all-elements.css">
+    <link rel="stylesheet" href="/styles/SCSS/DRY/fonts.css">
+    <link rel="stylesheet" href="/styles/SCSS/DRY/navbar.css">
+    <script src="/JS/navbar.js" defer></script>
 </head>
 <body>
-<main class="container">
-    <img src="..\styles\Images\GW2-home-background-image.jpg" alt="" id="image-intro">
-    <div class="image-alt transform-ef">
-        <h2>
-            Galaxy Wars 2 Map
-        </h2>
-        <p>
-            Made by <a href="" class="team">Uranox</a> and <a href="" class="team">Heinzsight</a>
-        </p>
-    </div>
-
-    <div class="intro">
-        <h1 class="h1-intro transform-ef">
-            Galaxy Wars 2 : The remake
-        </h1>
-        <p class="p-intro transform-ef">
-            Play Star Wars in Minecraft
-        </p>
-        <hr>
-        <div class="navbar">
-            <a href="Pages/Guides/guides.html">Games</a>
-            <a href="Pages/team.html">GW2 team</a>
-            <a href="#">Leaderborard</a>
-            <a href="#">Support the server</a>
-            <a href="#">Help</a>
-            <a href="/Pages/rules.html">Rules</a>
+    <div class="image-header-page-intro">
+        <header class="primary-header flex">
+            <div class="logo">
+                <h1>Galaxy Wars 2</h1>
+            </div>
+    
+            <nav class="navbar">
+                <ul class="primary-navigation flex" id="primary-navigation">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Pages/Guides/classes.html">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <!--burger button-->
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </header>
+        <div class="page-intro">
+            <h1>Galaxy Wars 2 : The Remake</h1>
+            <p>Lorem ipsum dolor sit.</p>
         </div>
     </div>
-
-</main>
+    <main class="grid-container">
+        <div class="server-intro grid-col-2">
+            <h2>Server Introduction</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nostrum dolores nam.</p>
+        </div>
+        <div class="boxes box-classes grid-row-2-col-2">
+            <h2>5+ Classes</h2>
+            <p>Soldier - Knight - Brawler - Sniper</p>
+        </div>
+        <div class="boxes box-classes grid-row-2-col-3">
+            <h2>3+ Maps</h2>
+            <p>Lorem - ipsum - dolor</p>
+        </div>
+    </main>
 </body>
 </html>

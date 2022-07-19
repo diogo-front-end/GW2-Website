@@ -1,122 +1,117 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-/*font-family: 'Montserrat', sans-serif;*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-/*font-family: 'Roboto', sans-serif;*/
-@font-face {
-  font-family: cubano;
-  src: url(/styles/Fonts/Cubano.ttf);
+.image-header-page-intro {
+  background-image: url(/styles/Images/complementary-shaders-parc.jpg);
+  padding: 0 0 25vh 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: orange;
-  border-radius: 10px;
-}
-
-#image-intro {
-  width: 100%;
-}
-
-.image-alt {
-  letter-spacing: .8px;
+.page-intro {
+  margin-top: 20vh;
   text-align: center;
-  font-family: roboto, sans-serif;
   color: white;
-  position: absolute;
-  bottom: 10px;
-  right: 25px;
-  background-color: black;
-  opacity: 0.75;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 7px;
 }
 
-.team {
-  color: white;
-  text-decoration: underline;
-  -webkit-text-decoration-color: orange;
-          text-decoration-color: orange;
-  text-decoration-thickness: 2px;
-}
-
-.intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  text-shadow: #1a1a1a 0px 2px .8px;
-}
-
-.h1-intro {
+.page-intro h1 {
   font-family: cubano;
   letter-spacing: .25rem;
-  font-size: 3rem;
+  font-size: 3.75rem;
   margin: 0%;
+  text-shadow: 0px 4px 3px black;
 }
 
-.p-intro {
-  font-family: cubano;
-  font-size: 1.65rem;
-  margin-top: 12px;
+.page-intro p {
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 5px;
   letter-spacing: .06rem;
+  text-shadow: 1px 2px 3px black;
 }
 
-.navbar {
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: 5rem 1fr 1fr 5rem;
+      grid-template-columns: 5rem 1fr 1fr 5rem;
+  -ms-grid-rows: (3fr)[4];
+      grid-template-rows: repeat(4, 3fr);
+}
+
+.grid-col-2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.grid-row-2-col-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.grid-row-2-col-3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.server-intro {
+  color: white;
+}
+
+.server-intro h2 {
+  font-size: 2.5rem;
+  font-family: kanit, sans-serif;
+  margin-bottom: 0;
+}
+
+.server-intro p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-family: montserrat, sans-serif;
+}
+
+.boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.navbar a {
-  top: 0%;
-  color: white;
-  font-family: cubano;
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding-right: 35px;
-  padding-left: 35px;
-  -webkit-transition: 250ms;
-  transition: 250ms;
-}
-
-.navbar a:hover {
-  color: #bdbdbd;
-  -webkit-transform: translateY(-2.5px);
-          transform: translateY(-2.5px);
-}
-
-.transform-ef {
-  -webkit-transition: 250ms;
-  transition: 250ms;
-}
-
-.transform-ef:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
-
-.fa-solid {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.25rem 0rem;
+  background-color: black;
+  border-radius: 20px;
   color: white;
 }
 
-hr {
-  border: 1px solid white;
-  border-radius: 50px;
+.boxes h2 {
+  text-transform: uppercase;
+  font-family: kanit;
+  letter-spacing: 1.25px;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.boxes p {
+  font-size: 1.15rem;
+  font-family: montserrat, sans-serif;
+  margin-top: 5px;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */

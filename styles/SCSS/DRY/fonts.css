@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 /*font-family: 'Montserrat', sans-serif;*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-/*font-family: 'Roboto', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /*font-family: 'Poppins', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+/*font-family: 'Dosis', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 @font-face {
   font-family: cubano;
   src: url(/styles/Fonts/Cubano.ttf);
