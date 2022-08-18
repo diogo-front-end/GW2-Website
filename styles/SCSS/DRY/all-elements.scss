@@ -1,5 +1,3 @@
-
-
 body {
 	margin: 0;
 	padding: 0;
@@ -26,43 +24,30 @@ body {
 }
 
 //FOOTER
-.footer-container {
-    background-color: rgb(37, 37, 37);
-    padding: 2rem;
-	margin-top: 5rem;
-}
-.footer {
-    background-color: rgb(37, 37, 37);
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-	column-count: 3;
-	margin: 0 auto;
-}
-.footer-header {
-    display: flex;
-    flex-direction: column;
-	margin-right: 5rem;
+.footer-grid-container {
+	display: grid;
+	grid-template-columns: 5rem 0.75fr 0.25fr 0.25fr 5rem;
+	
+	margin-top: 2rem;
+	padding: 2rem 0;
 
-}
-.footer-header h2 {
-    font-family: cubano, sans-serif;
-    letter-spacing: 2px;
-	text-shadow: 0px 5px 3px black;
+	background-color: rgb(10, 10, 10);
+	color: white;
 
-}
-.footer-header a {
-    text-align: left;
-    color: white;
-    text-decoration: none;
-	font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 5px;
-	margin-left: .5rem;
-	transition: 250ms;
-	&:hover {
-		color: #a09e9e;
-		transform: translateY(-2.5px);
+	font-family: kanit, sans-serif;
+	
+	a {
+		color: white;
 	}
+}
+
+.server-logo {
+	grid-column: 2 / 3;
+
+	font-size: 1.5rem;
+}
+
+.guides-pages, .maps-pages {
+	display: flex;
+	flex-direction: column;
 }

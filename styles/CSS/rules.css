@@ -1,20 +1,18 @@
 body {
   margin: 0;
-  background: #3b3a3a;
+  background: rgb(59, 58, 58);
 }
 
 .rules h2 {
   color: white;
   font-family: cubano;
   margin-left: 30px;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   font-size: 1.5rem;
 }
-
 .rules p {
   color: white;
   font-family: roboto, sans-serif;
   margin-left: 50px;
   font-size: 1.2rem;
-}
-/*# sourceMappingURL=rules.css.map */
+}/*# sourceMappingURL=rules.css.map */

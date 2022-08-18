@@ -10,22 +10,20 @@
   color: white;
   text-align: center;
 }
-
 .intro h1 {
   font-family: cubano;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   font-size: 4rem;
   margin: 0%;
   text-shadow: 0px 4px 3px black;
 }
-
 .intro p {
   font-style: italic;
   text-transform: uppercase;
   font-family: montserrat, sans-serif;
   font-size: 1.5rem;
   margin-top: 5px;
-  letter-spacing: .06rem;
+  letter-spacing: 0.06rem;
   text-shadow: 1px 2px 3px black;
 }
 
@@ -34,16 +32,13 @@
   color: white;
   margin-bottom: 3rem;
 }
-
 #intro h2 {
   margin-top: 1rem;
   font-size: 2rem;
   font-family: cubano, sans-serif;
   letter-spacing: 1.25px;
 }
-
 #intro p {
   font-size: 1.2rem;
   font-family: montserrat, sans-serif;
-}
-/*# sourceMappingURL=beginner.css.map */
+}/*# sourceMappingURL=beginner.css.map */

@@ -10,7 +10,7 @@
 	color: white;
 	text-align: center; 
 	h1 {
-		font-family: cubano;
+		font-family: cubano, sans-serif;
 		letter-spacing: .25rem;
 		font-size: 4rem;
 		margin: 0%;
@@ -32,10 +32,14 @@
 	color: white;
 	margin-bottom: 3rem;
 	h2 {
-		margin-top: 1rem;
-		font-size: 2rem;
-		font-family: cubano, sans-serif;
+		margin-top: .75rem;
+		font-size: 2.75rem;
+		font-family: Barlow, sans-serif;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-style: italic;
 		letter-spacing: 1.25px;
+		margin-bottom: 0;
 	}
 	p {
 		font-size: 1.2rem;

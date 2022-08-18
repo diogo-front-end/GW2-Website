@@ -10,22 +10,20 @@
   color: white;
   text-align: center;
 }
-
 .intro h1 {
-  font-family: cubano;
-  letter-spacing: .25rem;
+  font-family: cubano, sans-serif;
+  letter-spacing: 0.25rem;
   font-size: 4rem;
   margin: 0%;
   text-shadow: 0px 4px 3px black;
 }
-
 .intro p {
   font-style: italic;
   text-transform: uppercase;
   font-family: montserrat, sans-serif;
   font-size: 1.5rem;
   margin-top: 5px;
-  letter-spacing: .06rem;
+  letter-spacing: 0.06rem;
   text-shadow: 1px 2px 3px black;
 }
 
@@ -34,21 +32,22 @@
   color: white;
   margin-bottom: 3rem;
 }
-
 #guides-intro h2 {
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-family: cubano, sans-serif;
+  margin-top: 0.75rem;
+  font-size: 2.75rem;
+  font-family: Barlow, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
   letter-spacing: 1.25px;
+  margin-bottom: 0;
 }
-
 #guides-intro p {
   font-size: 1.2rem;
   font-family: montserrat, sans-serif;
 }
 
 #guides {
-  display: -ms-grid;
   display: grid;
   place-items: center;
   color: white;
@@ -57,24 +56,18 @@
 .guides-box {
   margin-bottom: 2.5rem;
   width: 65%;
-  background-color: #1b1b1b;
+  background-color: rgb(27, 27, 27);
   padding: 5px 25px 5px 25px;
   border-radius: 15px;
-  -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
-  -webkit-box-shadow: 0px 0px 5px #2b2b2b;
-          box-shadow: 0px 0px 5px #2b2b2b;
+  box-shadow: 0px 0px 5px rgb(43, 43, 43);
 }
-
 .guides-box p {
   font-family: montserrat, sans-serif;
 }
-
 .guides-box:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0px 0px 15px #ffa600;
-          box-shadow: 0px 0px 15px #ffa600;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px rgb(255, 166, 0);
 }
 
 .hover-underline {
@@ -83,18 +76,13 @@
   font-size: rem;
   font-family: cubano, sans-serif;
   letter-spacing: 1.25px;
-  -webkit-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
-  background: -webkit-gradient(linear, left top, right top, from(#ffd900), to(#ff9100)), -webkit-gradient(linear, left top, right top, from(#ff9100), to(#c80000));
-  background: linear-gradient(to right, #ffd900, #ff9100), linear-gradient(to right, #ff9100, #c80000);
+  background: linear-gradient(to right, rgb(255, 217, 0), rgb(255, 145, 0)), linear-gradient(to right, rgb(255, 145, 0), rgb(200, 0, 0));
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 400ms;
   transition: background-size 400ms;
 }
-
 .hover-underline:hover {
   background-size: 0 3px, 100% 3px;
-}
-/*# sourceMappingURL=guides.css.map */
+}/*# sourceMappingURL=guides.css.map */
