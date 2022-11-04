@@ -6,41 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GW2 - Guides</title>
     <script src="https://kit.fontawesome.com/7bfee9897b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/SCSS/Guides/guides.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/all-elements.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/fonts.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/navbar.css">
+    <link rel="stylesheet" href="/styles/CSS/guides.css">
+    <link rel="stylesheet" href="/styles/CSS/all-elements.css">
+    <link rel="stylesheet" href="/styles/CSS/fonts.css">
+    <link rel="stylesheet" href="/styles/CSS/navbar.css">
 </head>
 <body>
 
- <div class="image-intro">
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Galaxy Wars 2</h1>
+    <div class="image-header-page-intro">
+        <header class="primary-header flex">
+            <div class="logo">
+                <h1>Galaxy Wars 2 : The Remake</h1>
+            </div>
+    
+            <nav class="navbar">
+                <ul class="primary-navigation flex" id="primary-navigation">
+                    <li class="active">
+                        <a href="/HTML/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Pages/Games/guides.html">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--burger button-->
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </header>
+        <div class="page-intro">
+            <h1>Galaxy Wars 2 : The Remake</h1>
+            <p>Lorem ipsum dolor sit.</p>
         </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        <div class="navbar-links">
-            <a href="/HTML/index.html">Home</a>
-            <a href="#">Games</a>
-            <a href="#">Help</a>
-            <a href="/HTML/Pages/rules.html">Rules</a>
-            <a href="#">More</a>
-        </div>
-    </nav>
-<script src="/JS/navbar.js"></script>
-
-        <div class="intro">
-        <h1>
-            Galaxy Wars's 2 Guides
-        </h1>
-        <p>
-            Guides profided by Well known players
-        </p>
     </div>
-</div>
+ 
 
 <main class="container">
     <div id="guides-intro">
@@ -51,12 +59,12 @@
     
     <div id="guides">
         <div id="beginner" class="guides-box">
-            <h2><a href="/HTML/Pages/Guides/beginner.html" class="hover-underline">Beginner - Made by JulianElf</a></h2>
+            <h2><a href="/HTML/Pages/Games/Guides/beginner.html" class="hover-underline">Beginner - Made by JulianElf</a></h2>
             <p>Perfect guides for players that just get started at the server,
                 it will introduce you to the basic of Galaxy Wars 2's games. Thanks to JulianElf for making this amazing guide !</p>
         </div>
         <div id="classes" class="guides-box">
-            <h2><a href="/HTML/Pages/Guides/classes.html" class="hover-underline">Classes</a></h2>
+            <h2><a href="/HTML/Pages/Games/Guides/classes.html" class="hover-underline">Classes</a></h2>
             <p>Guides about every classes in the server such as Solidier, Knight, Bounty Hunter and more. 
                 They will go in deep about the class tactics, abilities and gameplay.</p>
         </div>
@@ -77,25 +85,7 @@
         </div>
     </div>
 </main>
-<footer>
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-header">
-                <h2>Social Medias</h2>
-                <a href="#">Youtube</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
-            <div class="footer-header">
-                <h2>Others pages</h2>
-                <a href="/HTML/index.html">Home</a>
-                <a href="/HTML/Pages/guides.html">Guides</a>
-                <a href="/HTML/Pages/rules.html">Rules</a>
-                <a href="/HTML/Pages/team.html">GW2 Team</a>
-            </div>
-        </div>
-    </div>
-</footer>
+
 
 </body>
 </html>

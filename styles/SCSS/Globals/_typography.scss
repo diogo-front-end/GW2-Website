@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+p {
+    margin-top: 0;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+a {
+    color: $fc-a;
+}

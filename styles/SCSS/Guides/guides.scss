@@ -1,31 +1,35 @@
-.image-intro {
-	padding-bottom: 12rem;
+.image-header-page-intro {
 	background-image: url(/styles/Images/complementary-shaders-parc.jpg);
-	background-position: center;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 0 0 15vh 0;
 }
-
-.intro {
-	margin-top: 8rem;
+.page-intro {
+	margin-top: 10vh;
+	
+	text-align: center;
 	color: white;
-	text-align: center; 
 	h1 {
-		font-family: cubano, sans-serif;
-		letter-spacing: .25rem;
-		font-size: 4rem;
 		margin: 0%;
+		
+		font-family: cubano, sans-serif;
+		font-size: 3.75rem;
 		text-shadow: 0px 4px 3px black;
+		letter-spacing: .25rem;
 	}
 	p {
+		margin-top: 5px;
+		
 		font-style: italic;
-		text-transform: uppercase;
 		font-family: montserrat, sans-serif;
 		font-size: 1.5rem;
-		margin-top: 5px;
-		letter-spacing: .06rem;
+		text-transform: uppercase;
 		text-shadow: 1px 2px 3px black;
+		letter-spacing: .06rem;
 	}
-} 
+}
+
 
 #guides-intro {
 	text-align: center;
@@ -33,13 +37,15 @@
 	margin-bottom: 3rem;
 	h2 {
 		margin-top: .75rem;
+		margin-bottom: 0;
+		
 		font-size: 2.75rem;
 		font-family: Barlow, sans-serif;
-		text-transform: uppercase;
 		font-weight: 900;
 		font-style: italic;
+		
+		text-transform: uppercase;
 		letter-spacing: 1.25px;
-		margin-bottom: 0;
 	}
 	p {
 		font-size: 1.2rem;
@@ -54,12 +60,14 @@
 }
 
 .guides-box {
-	margin-bottom: 2.5rem;
+	margin-bottom: 2rem;
+	
 	width: 65%;
-	background-color: rgb(27, 27, 27);
 	padding: 5px 25px 5px 25px;
 	border-radius: 15px;
 	transition: all 350ms ease-in-out;
+	
+	background-color: rgb(27, 27, 27);
 	box-shadow: 0px 0px 5px rgb(43, 43, 43);
 	p {
 		font-family: montserrat, sans-serif;

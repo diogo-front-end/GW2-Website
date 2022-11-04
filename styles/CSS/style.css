@@ -1,9 +1,22 @@
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+a {
+  color: rgb(255, 145, 0);
+}
+
 .image-header-page-intro {
   background-image: url(/styles/Images/complementary-shaders-parc.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 0 15vh 0;
+  background: linear-gradient(90deg, rgba);
 }
 
 .page-intro {
@@ -24,46 +37,47 @@
   font-family: montserrat, sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
-  text-shadow: 1px 2px 3px black;
+  text-shadow: 2px 2px 1px black;
   letter-spacing: 0.06rem;
 }
-
-.grid-container {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 5rem 1fr 1fr 5rem;
-  grid-template-rows: repeat(2, 3fr);
+.page-intro p span {
+  text-transform: none;
+  color: rgb(255, 145, 0);
+  font-weight: 700;
 }
 
-.grid-col-2 {
-  grid-column-start: 2;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
-
-.grid-row-2-col-2 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.grid-row-2-col-3 {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.server-intro {
+.container .server .server-intro {
   color: white;
 }
-.server-intro h2 {
-  margin-bottom: 0;
-  font-size: 2.75rem;
+.container .server .server-intro h2 {
+  margin-bottom: 8px;
+  font-size: 3rem;
   font-family: Barlow, sans-serif;
-  text-transform: uppercase;
   font-style: italic;
-  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.server-intro p {
-  margin-top: 8px;
+.container .server .server-intro p {
   font-size: 1.2rem;
   font-family: montserrat, sans-serif;
+}
+.container .server .server-intro-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.container .server .server-features-container {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.container .server .grid-col-2 {
+  grid-column: 1/2;
 }
 
 .boxes {
@@ -72,21 +86,98 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 3.25rem 0rem;
+  padding: 3rem 0;
+  border-radius: 10px;
   background-color: black;
-  border-radius: 20px;
   color: white;
 }
 .boxes h2 {
+  margin: 0;
   text-transform: uppercase;
   font-family: kanit;
-  letter-spacing: 1.25px;
   font-size: 1.8rem;
-  margin-bottom: 0;
+  letter-spacing: 1.25px;
 }
 .boxes p {
+  margin-top: 1px;
+  margin-bottom: 0;
   font-size: 1.15rem;
   font-family: montserrat, sans-serif;
-  margin-top: 5px;
   font-style: italic;
+}
+
+.releases-container .releases-intro {
+  margin-top: 2vh;
+  color: white;
+}
+.releases-container .releases-intro h2 {
+  margin-bottom: 8px;
+  font-family: barlow, sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.releases-container .releases-intro p {
+  font-family: montserrat, sans-serif;
+  font-size: 1.2rem;
+}
+.releases-container .releases-showcase-box {
+  margin-top: 1.5vh;
+  display: flex;
+  gap: 0.5rem;
+}
+.releases-container .releases-showcase-box .latest-release {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  padding: 10vh 0 10vh;
+  background-color: black;
+  border-radius: 10px;
+}
+.releases-container .releases-showcase-box .latest-release h3 {
+  font-size: 3rem;
+  font-family: kanit, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.releases-container .releases-showcase-box .latest-release p {
+  font-family: kanit, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.releases-container .releases-showcase-box .releases {
+  width: 25%;
+}
+.releases-container .releases-showcase-box .releases .release-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  background-color: black;
+  border-radius: 10px;
+  padding: 5vh 0 5vh;
+  transition: all 250ms ease-in-out;
+}
+.releases-container .releases-showcase-box .releases .release-boxes:hover {
+  translate: 5px;
+}
+.releases-container .releases-showcase-box .releases .release-boxes h3 {
+  font-size: 1.6rem;
+  font-family: kanit, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.releases-container .releases-showcase-box .releases .release-boxes p {
+  font-family: kanit, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.releases-container .releases-showcase-box .releases .three-last-release {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

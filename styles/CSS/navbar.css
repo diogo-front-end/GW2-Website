@@ -4,7 +4,7 @@
 }
 
 .primary-header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   height: 6vh;
   align-items: center;
   justify-content: space-between;
@@ -27,12 +27,12 @@
   transition: all 200ms;
 }
 .primary-navigation a:hover {
-  -webkit-text-decoration-color: rgb(197, 145, 49);
-          text-decoration-color: rgb(197, 145, 49);
+  -webkit-text-decoration-color: rgb(255, 145, 0);
+          text-decoration-color: rgb(255, 145, 0);
 }
 
 .logo {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 2rem;
   font-family: Kanit, sans-serif;
   text-transform: uppercase;
@@ -40,7 +40,7 @@
 
 .menu-btn_burger:hover {
   cursor: pointer;
-  background-color: rgb(224, 175, 84);
+  background-color: rgb(255, 145, 0);
 }
 
 .menu-btn {
@@ -49,8 +49,8 @@
 
 .menu-btn_burger {
   width: 40px;
-  height: 5px;
-  background: #fff;
+  height: 4px;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   transition: all 500ms ease-in-out;
 }
@@ -60,8 +60,8 @@
   content: " ";
   position: absolute;
   width: 40px;
-  height: 5px;
-  background: #fff;
+  height: 4px;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   transition: all 500ms ease-in-out;
 }
@@ -81,12 +81,12 @@
 
 .menu-btn.open .menu-btn_burger::before {
   transform: rotate(45deg) translate(35px, -35px);
-  background-color: rgb(224, 175, 84);
+  background-color: rgb(255, 145, 0);
 }
 
 .menu-btn.open .menu-btn_burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
-  background-color: rgb(224, 175, 84);
+  background-color: rgb(255, 145, 0);
 }
 
 @media (max-width: 47em) {
@@ -99,7 +99,7 @@
     flex-direction: column;
     padding: 15rem 10em;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.65);
     transform: translateX(100%);
     transition: transform 500ms ease-in-out;
   }

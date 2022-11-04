@@ -1,0 +1,80 @@
+@use 'variables' as *;
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	color: white;
+	background-color: $body-background-clr;
+}
+
+a {
+	color: $fc-a;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: $scrollbar-clr;
+	border-radius: 10px;
+}
+
+footer {
+	width: 100%;
+	background-color: rgb(8, 8, 8);
+	color: white;
+	.footer-content {
+		display: grid;
+		grid-template-columns: 1fr repeat(4, 15rem);
+		gap: 1vh;
+
+		padding: 3vh 5vh 3vh;
+		margin-top: 3vh;
+		.footer-sitename {
+			margin-right: auto;
+
+			h2 {
+				font-family: $font-fa-h1;
+				font-size: 2rem;
+				letter-spacing: 1.4px;
+			}
+			p {
+				font-style: italic;
+				font-family: $font-fa-p;
+				font-size: 1.2rem;
+	
+				text-transform: uppercase;
+				letter-spacing: .5px;
+			}
+		}
+		.footer-block {
+			h3 {
+				font-size: 1.4rem;
+				font-family: $font-fa-h2;
+				
+				margin-bottom: 1vh;
+			}
+			.footer-links {
+				list-style: none;
+				li {
+					font-size: .9rem;
+					font-family: $font-fa-p;
+
+					margin-bottom: 5px;
+					transition: all 250ms ;
+					&:hover {
+						transform: translateX(5px);
+					}
+				}
+			}
+		}
+	}
+}

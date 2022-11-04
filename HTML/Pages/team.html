@@ -1,125 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galaxy Wars 2 The remake - GW2 Team</title>
     <script src="https://kit.fontawesome.com/7bfee9897b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/SCSS/team.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/all-elements.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/navbar.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/fonts.css">
-</header>
+    <link rel="stylesheet" href="/styles/CSS/team.css">
+    <link rel="stylesheet" href="/styles/CSS/all-elements.css">
+    <link rel="stylesheet" href="/styles/CSS/navbar.css">
+    <link rel="stylesheet" href="/styles/CSS/fonts.css">
+    <script src="/JS/navbar.js" defer></script>
+</head>
 <body>
-    <div class="image-intro">
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Galaxy Wars 2</h1>
-        </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="/HTML/index.html">Home</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="/HTML/Pages/rules.html">Rules</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
-        </div>
-    </nav>
-<script src="/JS/navbar.js"></script>
 
+    <div class="image-header-page-intro">
+        <header class="primary-header flex">
+            <div class="logo">
+                <h1>Galaxy Wars 2 : The Remake</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="primary-navigation flex" id="primary-navigation">
+                    <li class="active">
+                        <a href="/HTML/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Pages/Games/guides.html">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Pages/team.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--burger button-->
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </header>
+        
+        <div class="page-intro">
+            <h1>Galaxy Wars 2 : The Remake</h1>
+            <p>Team's members</p>
+        </div>
+    </div>
+    
     <main class="container">
-        <div class="intro">
-            <h1>
-                Galaxy Wars's 2 Team
-            </h1>
-            <p>
-                Every GW2's team members
-            </p>
-        </div>
-    </div>
-
-    <div class="team">
-        <h2 class="job">Jobs : <span class="builder">Builder</span> -<span class="tester">Tester</span> -<span class="dev">Programmer</span> -<span class="webdev">Web developper</span> -<span class="pack">Resource pack modeler</span></h2>
-        <div class="background">
-            <h2>
-                <img src="/styles/Images/Crazedorangutan's head.png" alt=""> Crazedorangutan <span class="owner">Owner</span> -<span class="builder">Builder</span> -<span class="tester">Tester</span> -<span class="dev">Programmer</span> -<span class="pack">Resource pack modeler</span>
-                 
-            </h2>
-            <p>
-                Crazedorangutan is the onwer of this server. He had the idea of remaking the original Galaxy Wars.<br>
-                He started making GW2 alone but over the time he makes a group of builders. 
-            </p>
-        </div>
-
-        <div class="diogo background">
-            <h2>
-                <img src="/styles/Images/Crafter_DIOGO.svg" alt=""> Crafter_DIOGO <span class="builder">Builder</span> -<span class="tester">Tester</span> -<span class="dev">Programmer</span> -<span class="webdev">Web developper</span>
-            </h2>
-            <p>
-                Builder, Tester, Programmer, and the only web developper. Crafter_DIOGO is an important member of the team. <br>
-                He is the second person to join the team.
-            </p>
-        </div>
-
-        <div class="uranox background">
-            <h2>
-                <img src="/styles/Images/Urqnox's header.png" alt=""> Uranox <span class="builder">Builder</span>
-            </h2>
-            <p>
-               Famous with his world record with the most wins in Galaxt Wars, Uranox is a german builder in Galaxy Wars 2. He made map's name with Heinzsight (see next builder). 
-            </p>
-        </div>
-
-        <div class="heinz background">
-            <h2>
-                Heinzsight <span class="builder">Builder</span>
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, nulla blanditiis architecto placeat vero maxime in ab, officia aut enim labore cumque deserunt? Necessitatibus repellendus sunt obcaecati iure esse vero!
-            </p>
-        </div>
-
-        <div class="stellar background">
-            <h2>
-                Stellar Wombat <span class="builder">Builder</span>
-            </h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, ut recusandae! Impedit sunt voluptas voluptates nesciunt veritatis a sequi molestiae saepe amet? Beatae, obcaecati at voluptatem ipsum deserunt recusandae eveniet.
-            </p>
-        </div>
-    </div>
-
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-header">
-                <h2>Social Medias</h2>
-                <a href="#">Youtube</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+        <p>The team behind Galaxy Wars 2. Memebers are sorted by their main job since a member can have
+        multiple jobs.</p>
+        <section class="job-container owner-container">
+            <div class="flex-container">
+                <div class="member-block craze-block">
+                    <img src="/styles/Images//Team-Members/crazedorangutan-head.png" alt="" class="profile-pic">
+                    <div class="about">
+                        <h3>Crazedorangutan</h3>
+                        <h5 class="owner">Owner</h5>
+                        <p>Crazedorangutan is the onwer of this server. He had the idea of remaking the original Galaxy Wars. 
+                        He started making GW2 alone but over the time, new players joined.</p>
+                    </div>
+                    <div class="sec-jobs">
+                        <h4>Secondary Jobs :</h4>
+                        <span class="builder">Builder</span> -
+                        <span class="tester">Tester</span> -
+                        <span class="serverdev">Server Programmer</span> -
+                        <span class="resource-pack-dev">Resource Pack Developer</span>
+                    </div>
+                </div>
             </div>
-            <div class="footer-header">
-                <h2>Others pages</h2>
-                <a href="/HTML/index.html">Home</a>
-                <a href="/HTML/Pages/guides.html">Games</a>
-                <a href="/HTML/Pages/rules.html">Help</a>
-                <a href="/HTML/Pages/team.html">Rules</a>
-                <a href="/HTML/Pages/team.html"></a>
-                <a href="/HTML/index.html">Home</a>
-                <a href="/HTML/Pages/guides.html">Games</a>
-                <a href="/HTML/Pages/rules.html">Help</a>
-                <a href="/HTML/Pages/team.html">Rules</a>
-                <a href="/HTML/Pages/team.html"></a>
+        </section>
+        <section class="job-container builders-container">
+            <h2>Builders</h2>
+            <div class="flex-container">
+                <div class="builder-block member-block uranox-block">
+                    <img src="/styles/Images/Team-Members/Urqnox-head.png" alt="" class="profile-pic">
+                    <div class="about">
+                        <h3>Urqnox</h3>
+                        <p>Famous with his world record with the most wins in Galaxy Wars, Uranox is a builder in Galaxy Wars. 
+                            He is one of the main builder of Kashyyyk with Heinzsight.
+                        </p>
+                    </div>
+                    <div class="sec-jobs">
+                        <h4>Secondary Jobs :</h4>
+                        <span class="none">None</span>
+                    </div>
+                </div>
+                <div class="builder-block member-block heinz-block">
+                    <img src="/styles/Images/Team-Members/heinzsight-head.png" alt="" class="profile-pic">
+                    <div class="about">
+                        <h3>Heinzsight</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, esse. Fugiat, nostrum obcaecati repudiandae neque aspernatur, 
+                            tenetur exercitationem!</p>
+                    </div>
+                    <div class="sec-jobs">
+                        <h4>Secondary Jobs :</h4>
+                        <span class="none">None</span>
+                    </div>
+                </div>
+                <div class="builder-block member-block stellar-block">
+                    <img src="/styles/Images/Team-Members/stellarWombat-head.png" alt="" class="profile-pic">
+                    <div class="about">
+                        <h3>Stellar Wombat</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem est aperiam inventore eaque, ab officiis fuga modi nulla, dicta reiciendis excepturi accusamus.</p>
+                    </div>
+                    <div class="sec-jobs">
+                        <h4>Secondary Jobs :</h4>
+                        <span class="none">None</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>  
+        </section>
+        <section class="job-container serverdev-container">
+            <h2>Server Programmer</h2>
+            <div class="flex-container">
+                <div class="serverdev-block member-block foxer-block">
+                    <img src="/styles/Images/Team-Members/foxer-head.png" alt="" class="profile-pic">
+                    <div class="about">
+                        <h3>Foxer___</h3>
+                        <p>Foxer is a recent member of the team, he is a server programmer that fixed a lot of bugs in the past releases.
+                            He is familar with the Java programming language in Software Developement and Python in IA.
+                        </p>
+                    </div>
+                    <div class="sec-jobs">
+                        <h4>Secondary Jobs :</h4>
+                        <span class="none">None</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="job-container webdev-container">
+            <h2>Web Developer</h2>
+            <div class="flex-container">
+                <div class="webdev-block member-block diogo-block">
+                    <img src="/styles/Images/Team-Members/crafter-diogo-head.png" alt="" class="profile-pic">
+                    <div class="about">
+                        <h3>Crafter_DIOGO</h3>
+                        <p>Crafter_DIOGO is the web developer of the Galaxy Wars 2's Website. He built the garden in the hub
+                        with his friend Leo which is not a member.</p>
+                    </div>
+                    <div class="sec-jobs">
+                        <h4>Secondary Jobs :</h4>
+                        <span class="serverdev">Server Programmers</span> -
+                        <span class="builder">Builder</span> -
+                        <span class="tester">Tester</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-block footer-sitename">
+                <h2>Galaxy Wars 2 : The Remake</h2>
+                <p>Star Wars in Minecraft</p>
+            </div>
+            <div class="footer-block footer-pages">
+                <h3>Pages</h3>
+                <ul class="footer-links">
+                    <li><a href="/HTML/index.html">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Rules</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-guides">
+                <h3>Guides</h3>
+                <ul class="footer-links">
+                    <li><a href="/HTML/Pages/Games/Guides/beginner.html">Beginner</a></li>
+                    <li><a href="/HTML/Pages/Games/Guides/classes.html">Classes</a></li>
+                    <li><a href="#">Tips and Tricks</a></li>
+                    <li><a href="#">Positioning</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-maps">
+                <h3>Maps</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Kashyyyk</a></li>
+                    <li><a href="#">DeathStar</a></li>
+                    <li><a href="#">Cloud City</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-socials">
+                <h3>Socials Medias</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Twiter</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 

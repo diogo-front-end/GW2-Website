@@ -1,3 +1,4 @@
+@use 'Globals' as *;
 
 .image-header-page-intro {
 	background-image: url(/styles/Images/complementary-shaders-parc.jpg);
@@ -5,6 +6,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 0 0 15vh 0;
+	background: linear-gradient(
+		90deg,
+		rgba()
+	);
 }
 .page-intro {
 	margin-top: 10vh;
@@ -14,8 +19,8 @@
 	h1 {
 		margin: 0%;
 		
-		font-family: cubano, sans-serif;
-		font-size: 3.75rem;
+		font-family: $font-fa-h1;
+		font-size: $fs-h1;
 		text-shadow: 0px 4px 3px black;
 		letter-spacing: .25rem;
 	}
@@ -25,51 +30,57 @@
 		font-style: italic;
 		font-family: montserrat, sans-serif;
 		font-size: 1.5rem;
+		
 		text-transform: uppercase;
-		text-shadow: 1px 2px 3px black;
+		text-shadow: 2px 2px 1px black;
 		letter-spacing: .06rem;
+		span {
+			text-transform: none;
+			color: $fc-a;
+			font-weight: 700;
+		}
 	}
 }
 
-.grid-container {
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: 5rem 1fr 1fr 5rem;
-	grid-template-rows: repeat(2, 3fr);
-}
+//Grid-Containers
+.container {
+	width: 90%;
+	margin: 0 auto;
+	.server {
+		.server-intro {
+			color:white;
+			h2 {
+				margin-bottom: 8px;
+				
+				font-size: $fs-h2;
+				font-family: Barlow, sans-serif;
+				font-style: italic;
+				
+				text-transform: uppercase;
+			}
+			p {
+				font-size: $fs-p;
+				font-family: montserrat, sans-serif;
+			}
+		}
+		.server-intro-container {
+			display: grid;
+			gap: 1rem;
+			grid-template-columns: repeat(2, 1fr);
 
-.grid-col-2 {
-	grid-column-start: 2;
-}
-
-.grid-row-2-col-2 {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-
-.grid-row-2-col-3 {
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-}
-
-
-.server-intro {
-	color:white;
-	h2 {
-		margin-bottom: 0;
-		
-		font-size: 2.75rem;
-		font-family: Barlow, sans-serif;
-		text-transform: uppercase;
-		font-style: italic;
-		letter-spacing: 2px;
+			margin-top: 3vh;
+			margin-bottom: 3vh;
+		}
+		.server-features-container {
+			display: grid;
+			gap: .5rem;
+			grid-template-columns: repeat(4, 1fr);
+		}
+		.grid-col-2 {
+			grid-column: 1 / 2;
+		}
 	}
-	p {
-		margin-top: 8px;
-		
-		font-size: 1.2rem;
-		font-family: montserrat, sans-serif;
-	}
+	
 }
 
 .boxes {
@@ -79,21 +90,115 @@
 	text-align: center;
 	flex-direction: column;
 	
-	padding: 3.25rem 0rem;
+	padding: 3rem 0;
+	border-radius: 10px;
+	
 	background-color: black;
-	border-radius: 20px;
 	color: white;
 	h2 {
+		margin: 0;
+		
 		text-transform: uppercase;
 		font-family: kanit;
-		letter-spacing: 1.25px;
 		font-size: 1.8rem;
-		margin-bottom: 0;
+		letter-spacing: 1.25px;
+		
 	}
 	p {
+		margin-top: 1px;
+		margin-bottom: 0;
+		
 		font-size: 1.15rem;
 		font-family: montserrat, sans-serif;
-		margin-top: 5px;
 		font-style: italic;
+	}
+}
+.releases-container {
+	.releases-intro {
+		margin-top: 2vh;
+
+		color: white;
+		h2 {
+			margin-bottom: 8px;
+
+			font-family: barlow, sans-serif;
+			font-style: italic;
+			font-size: $fs-h2;
+
+			text-transform: uppercase;
+		}
+		p {
+			font-family: montserrat, sans-serif;
+			font-size: $fs-p;
+		}
+	}
+	.releases-showcase-box {
+		margin-top: 1.5vh;
+		display: flex;
+		gap: .5rem;
+
+		.latest-release {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			width: 75%;
+			padding: 10vh 0 10vh;
+
+			background-color: black;
+			border-radius: 10px;
+			h3 {
+				font-size: $fs-h2;
+				font-family: $font-fa-h2;
+				text-transform: uppercase;
+				font-style: italic;
+				letter-spacing: 2px;
+
+				margin-bottom: 0;
+			}
+			p {
+				font-family: $font-fa-h2;
+				text-transform: uppercase;
+				font-style: italic;
+			}
+		}
+		.releases {
+			width: calc(100% - 75%);
+
+			.release-boxes {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				
+				margin-bottom: .5rem;
+
+				background-color: black;
+				border-radius: 10px;
+				padding: 5vh 0 5vh;
+
+				transition: all 250ms ease-in-out;
+				&:hover {
+					translate: 5px;
+ 				}
+				h3 {
+					$fs-h3: 1.6rem;
+					font-size: $fs-h3;
+					font-family: $font-fa-h2;
+					text-transform: uppercase;
+					font-style: italic;
+					letter-spacing: 2px;
+				}
+				p {
+					font-family: $font-fa-h2;
+					text-transform: uppercase;
+					font-style: italic;
+				}
+			}
+			.three-last-release {
+				margin-bottom: 0;
+			}
+		}
 	}
 }

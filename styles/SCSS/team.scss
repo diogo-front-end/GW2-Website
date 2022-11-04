@@ -1,99 +1,157 @@
-body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	background-color: #121212;
-	
-}
+@use 'Globals' as *;
 
-.image-intro {
-	padding-bottom: 12rem;
+.image-header-page-intro {
 	background-image: url(/styles/Images/complementary-shaders-parc.jpg);
-	background-position: center;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 0 0 15vh 0;
+
+	.page-intro {
+		margin-top: 10vh;
+
+		text-align: center;
+		color: white;
+		h1 {
+			margin: 0%;
+
+			font-family: $font-fa-h1;
+			font-size: $fs-h1;
+			text-shadow: 0px 4px 3px black;
+			letter-spacing: .25rem;
+		}
+		p {
+			margin-top: 5px;
+
+			font-style: italic;
+			font-family: $font-fa-p;
+			font-size: 1.5rem;
+
+			text-transform: uppercase;
+			text-shadow: 1px 2px 3px black;
+	 		letter-spacing: .06rem;
+		}
+	}
 }
 
-.intro {
-	margin-top: 8rem;
-	color: white;
-	text-align: center; 
-	h1 {
-		font-family: cubano;
-		letter-spacing: .25rem;
-		font-size: 4rem;
-		margin: 0%;
-		text-shadow: 0px 4px 3px black;
-	}
+.container {
+	width: 90%;
+	margin: 0 auto;
 	p {
-		font-style: italic;
-		text-transform: uppercase;
-		font-family: montserrat, sans-serif;
-		font-size: 1.5rem;
-		margin-top: 5px;
-		letter-spacing: .06rem;
-		text-shadow: 1px 2px 3px black;
-	}
-} 
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 
-.team {
-	color: white;
-	display: grid;
-	place-items: center;
-	font-family: sans-serif;
-}
-.background {
-	width: 65%;
-	background-color: rgb(27, 27, 27);
-	border-radius: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	margin-top: 15px;
-	h2 {
-		font-family: cubano;
-		position: relative;
-		letter-spacing: .1rem;
-		text-shadow: 1px 5px 0px black;
+		text-align: center;
+
+		font-family: $font-fa-p;
+		font-size: $fs-p;
 	}
-	p {
-		margin-left: 10px;
-		font-family: 'montserrat', sans-serif;
-		font-size: 1.2rem;
-		letter-spacing: .05rem;
+	.job-container {
+		display: grid;
+		place-items: center;
+		margin-bottom: 1rem;
+
+		$fs-h2: 2rem;
+		h2 {
+			font-family: $font-fa-h2;
+			font-size: $fs-h2;
+			text-decoration: underline;
+		}
+		.flex-container {
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+			align-items: center;
+			height: 100%;
+
+			.member-block {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				max-width: 30%;
+				min-height: 100%;
+
+				color: white;
+				background-color: rgb(19, 19, 19);
+				border-radius: 10px;
+				transition: all 250ms ease-in-out;
+
+				&:hover {
+					transform: scale(1.02);
+					background-color: rgb(22, 22, 22);
+				}
+				.profile-pic {
+					width: 50px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					
+					border-radius:  5px;
+				}
+
+				.about {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+
+					padding-left: 10px;
+					padding-right: 10px;
+					margin-bottom: 3.5rem;
+
+					h3 {
+						$fs-h3: 1.5rem;
+						font-family: $font-fa-h3;
+						font-size: $fs-h3;
+					}
+				}
+
+				.sec-jobs {
+					position: absolute;
+					bottom: 0;
+
+					$fs-p: 0.9rem;
+					font-family: $font-fa-p;
+					font-size: $fs-p;
+
+					background-color: black;
+					width: 100%;
+					padding: 8px;
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+				}
+			}
+		}
 	}
-    img {
-		position: relative;
-		top: 10px;
-		width: 50px;
-        border-radius: 7px;
-    }
 }
-.job {
-	font-family: cubano;
-	letter-spacing: .1rem;
-	text-shadow: 1px 5px 0px black;
-}
-span {
-	margin-left: 10px;
-	font-size: 1rem;
-	font-family: montserrat, sans-serif;
-	text-shadow: 2px 3px 0px black;
+.craze-block > .about h5 {
+	font-family: $font-fa-h2;
+	font-size: 1.4rem;
 }
 .builder {
-    color: blue;
+    color: rgb(99, 44, 250);
 }
 .tester {
-    color: orange;
+    color: rgb(231, 157, 18);
 }
-.dev {
-    color: cyan;
+.serverdev {
+    color: rgb(16, 112, 236);
 }
 .webdev {
-    color: crimson;
+    color: rgb(224, 42, 42);
 }
 .owner {
-    color: gold;
+	background-image: 
+	linear-gradient(
+		90deg,
+		rgb(255, 174, 0),
+		rgb(89, 0, 206)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
-.pack {
-	color: green;
+.resource-pack-dev {
+	color: rgb(0, 151, 0);
 }

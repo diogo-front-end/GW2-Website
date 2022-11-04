@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GW2 - Home</title>
+    <title>GW2 - Homepage</title>
     <script src="https://kit.fontawesome.com/7bfee9897b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/CSS/style.css">
     <link rel="stylesheet" href="/styles/CSS/all-elements.css">
@@ -19,7 +19,6 @@
             <div class="logo">
                 <h1>Galaxy Wars 2 : The Remake</h1>
             </div>
-    
             <nav class="navbar">
                 <ul class="primary-navigation flex" id="primary-navigation">
                     <li class="active">
@@ -35,6 +34,9 @@
                         <a href="#">Rules</a>
                     </li>
                     <li>
+                        <a href="/HTML/Pages/team.html">Team</a>
+                    </li>
+                    <li>
                         <a href="#">More</a>
                     </li>
                 </ul>
@@ -46,44 +48,112 @@
         </header>
         <div class="page-intro">
             <h1>Galaxy Wars 2 : The Remake</h1>
-            <p>Lorem ipsum dolor sit.</p>
+            <p>Ip address: <span>gwtwo.minehut.gg</span></p>
         </div>
     </div>
 
+    <main class="container">
+        <section class="server">
+            <div class="server-intro-container">
+                <div class="server-intro grid-col-2">
+                     <h2>Server Introduction</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Libero nostrum dolores nam.</p>
+                </div>
+            </div>
 
-    <main class="grid-container">
-        <div class="server-intro grid-col-2">
-            <h2>Server Introduction</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nostrum dolores nam.</p>
-        </div>
-        <div class="boxes box-classes grid-row-2-col-2">
-            <h2>5+ Classes</h2>
-            <p>Soldier - Knight - Brawler - Sniper</p>
-        </div>
-        <div class="boxes box-classes grid-row-2-col-3">
-            <h2>3+ Maps</h2>
-            <p>Lorem - ipsum - dolor</p>
-        </div>
+            <div class="server-features-container">
+                <div class="boxes box-classes grid-col-2">
+                    <h2>5+ Classes</h2>
+                    <p>Soldier - Knight - Brawler - Sniper</p>
+                </div>
+                <div class="boxes grid-col-3-4">
+                    <h2>3+ Maps</h2>
+                    <p>DeathStar - Cloud City - Kashyyyk</p>
+                </div>
+                <div class="boxes grid-col-3-4">
+                    <h2>3+ Maps</h2>
+                    <p>Lorem - ipsum - dolor</p>
+                </div>
+                <div class="boxes grid-col-3-4">
+                    <h2>3+ Maps</h2>
+                    <p>Lorem - ipsum - dolor</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="releases-container">
+            <div class="releases-intro">
+                <h2>Server / Games Updates</h2>
+                <p>The 4 lastest releases Patch Notes will always be shown in the homepage, 
+                    but all the versions can be seen in the <a href="/HTML/Pages/Releases/releases_list.html" target="_blank">releases</a> page.</p>
+            </div>
+
+            <section class="releases-showcase-box">
+                <div class="latest-release">
+                    <h3>Version 0.6</h3>
+                    <p>Game Update</p>
+                </div>
+                <section class="releases">
+                    <div class="one-last-release release-boxes">
+                        <h3>Version 0.5</h3>
+                        <p>Game Update</p>
+                    </div>
+                    <div class="two-last-release release-boxes">
+                        <h3>Version 0.4</h3>
+                        <p>Game Update</p>
+                    </div>
+                    <div class="three-last-release release-boxes">
+                        <h3>Version 0.3</h3>
+                        <p>Game Update</p>
+                    </div>
+                </section>
+            </section>
+
+        </section>
     </main>
 
-
-    <footer class="footer-grid-container footer-container">
-        <div class="server-logo">
-            <h2>Galaxy Wars 2 : The Remake</h2>
-        </div>
-        <div class="guides-pages">
-            <a href="/HTML/Pages/Games/guides.html"><h2>Guides</h2></a>
-            <a href="/HTML/Pages/Games/Guides/beginner.html">For beginners</a>
-            <a href="/HTML/Pages/Games/Guides/classes.html">Classes</a>
-        </div>
-        <div class="maps-pages grid-all-col">
-            <a href="#" id="h2-maps-pages"><h2>Maps</h2></a>
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-block footer-sitename">
+                <h2>Galaxy Wars 2 : The Remake</h2>
+                <p>Star Wars in Minecraft</p>
+            </div>
+            <div class="footer-block footer-pages">
+                <h3>Pages</h3>
+                <ul class="footer-links">
+                    <li><a href="/HTML/index.html">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Rules</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-guides">
+                <h3>Guides</h3>
+                <ul class="footer-links">
+                    <li><a href="/HTML/Pages/Games/Guides/beginner.html">Beginner</a></li>
+                    <li><a href="/HTML/Pages/Games/Guides/classes.html">Classes</a></li>
+                    <li><a href="#">Tips and Tricks</a></li>
+                    <li><a href="#">Positioning</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-maps">
+                <h3>Maps</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Kashyyyk</a></li>
+                    <li><a href="#">DeathStar</a></li>
+                    <li><a href="#">Cloud City</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-socials">
+                <h3>Socials Medias</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Twiter</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-
-
 </body>
 </html>

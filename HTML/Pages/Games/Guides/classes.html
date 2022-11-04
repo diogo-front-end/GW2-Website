@@ -6,42 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GW2 - Guides</title>
     <script src="https://kit.fontawesome.com/7bfee9897b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/SCSS/Guides/classes.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/all-elements.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/fonts.css">
-    <link rel="stylesheet" href="/styles/SCSS/DRY/navbar.css">
+    <link rel="stylesheet" href="/styles/CSS/classes.css">
+    <link rel="stylesheet" href="/styles/CSS/all-elements.css">
+    <link rel="stylesheet" href="/styles/CSS/fonts.css">
+    <link rel="stylesheet" href="/styles/CSS/navbar.css">
 </head>
 <body>
 
-<div class="image-intro">
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Galaxy Wars 2</h1>
+    <div class="image-header-page-intro">
+        <header class="primary-header flex">
+            <div class="logo">
+                <h1>Galaxy Wars 2 : The Remake</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="primary-navigation flex" id="primary-navigation">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Pages/Games/guides.html">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--burger button-->
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </header>
+        <div class="page-intro">
+            <h1>Galaxy Wars 2 : The Remake</h1>
+            <p>Lorem ipsum dolor sit.</p>
         </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <a href="/HTML/index.html">Home</a>
-            <a href="#">Games</a>
-            <a href="#">Help</a>
-            <a href="/HTML/Pages/rules.html">Rules</a>
-            <a href="#">More</a>
-        </div>
-    </nav>
-<script src="/JS/navbar.js"></script>
-
-    <div class="intro">
-        <h1>
-            Galaxy Wars's 2 Classes Guides
-        </h1>
-        <p>
-            Guides for the differents classes in the server 
-        </p>
     </div>
-</div>
 
 
 <main class="container">
@@ -50,8 +55,8 @@
         <p>Each guide is about a class of the server, 
             it will teach you about their abilities, weapons / guns, strenghts, weakness. <br>
            If you are looking for something else, 
-                you probably need to go the <a href="/HTML/Pages/Guides/guides.html" class="underline">guides</a> page. 
-                Else if you still didn't get what you want, go to the <a href="/HTML/Pages/help.html" class="underline">page</a>.</p>
+                you probably need to go the <a href="/HTML/Pages/Games/guides.html">guides</a> page. 
+                Else if you still didn't get what you want, visit the <a href="#" target="_blank">help</a> page.</p>
     </div>
     <div id="classes">
         <div id="soldier" class="classes-box">

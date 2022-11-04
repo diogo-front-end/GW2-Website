@@ -1,10 +1,12 @@
+@use 'variables' as *;
+
 .flex {
     display: flex;
     gap: 1.5rem;
 }
 
 .primary-header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $nav-clr;
     height: 6vh;
     align-items: center;
     justify-content: space-between;
@@ -21,17 +23,17 @@
         font-weight: 900;
         letter-spacing: .5px;
         font-size: 1.55rem;
-        color: rgb(255, 255, 255);
+        color: $nav-clr-light;
         text-decoration: underline;
         transition: all 200ms;
         &:hover {
-            text-decoration-color: rgb(197, 145, 49);
+            text-decoration-color: $nav-hover-clr;
         }
     }
 }
 
 .logo {
-    color: white;
+    color: $nav-clr-light;
     margin-left: 2rem;
     font-family: Kanit, sans-serif;
     text-transform: uppercase;
@@ -39,15 +41,15 @@
 //Burger Menu
 .menu-btn_burger:hover {
     cursor: pointer;
-    background-color: rgb(224, 175, 84);
+    background-color: $nav-hover-clr;
 }
 .menu-btn {
     display: none;
 }
 .menu-btn_burger {
     width: 40px;
-    height: 5px;
-    background: #fff;
+    height: 4px;
+    background: $nav-clr-light;
     border-radius: 10px;
     transition: all 500ms ease-in-out;
 }
@@ -56,8 +58,8 @@
     content: " ";
     position: absolute;
     width: 40px;
-    height: 5px;
-    background: #fff;
+    height: 4px;
+    background: $nav-clr-light;
     border-radius: 10px;
     transition: all 500ms ease-in-out;
 }
@@ -76,11 +78,11 @@
 }
 .menu-btn.open .menu-btn_burger::before {
     transform: rotate(45deg) translate(35px, -35px);
-    background-color: rgb(224, 175, 84);
+    background-color: $nav-hover-clr;
 }
 .menu-btn.open .menu-btn_burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
-    background-color: rgb(224, 175, 84);
+    background-color: $nav-hover-clr;
 }
 
 @media (max-width: 47em) {
@@ -93,7 +95,7 @@
         flex-direction: column;
         padding: 15rem 10em;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.75);
+        background-color: $nav-clr;
         transform: translateX(100%);
         transition: transform 500ms ease-in-out;
     }
