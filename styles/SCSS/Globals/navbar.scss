@@ -45,9 +45,10 @@
 }
 .menu-btn {
     display: none;
+    transform: rotate(180deg);
 }
 .menu-btn_burger {
-    width: 40px;
+    width: 25px;
     height: 4px;
     background: $nav-clr-light;
     border-radius: 10px;
@@ -57,7 +58,7 @@
 .menu-btn_burger::after {
     content: " ";
     position: absolute;
-    width: 40px;
+    width: 35px;
     height: 4px;
     background: $nav-clr-light;
     border-radius: 10px;
@@ -86,12 +87,18 @@
 }
 
 @media (max-width: 47em) {
+    .primary-header {
+        transition: all 500ms ease-in-out;
+    }
+
     .primary-navigation {
+        $nav-clr: rgba(0, 0, 0, 1);
+
         z-index: 1000;
         gap: 3rem;
         margin: 0;
         position: fixed;
-        inset: 0 0 0 0;
+        inset: 6vh 0 0 0;
         flex-direction: column;
         padding: 15rem 10em;
         text-align: center;

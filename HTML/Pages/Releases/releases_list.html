@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GW2 - Homepage</title>
     <script src="https://kit.fontawesome.com/7bfee9897b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/CSS/style.css">
+    <link rel="stylesheet" href="/styles/CSS/releases-list.css">
     <link rel="stylesheet" href="/styles/CSS/all-elements.css">
     <link rel="stylesheet" href="/styles/CSS/fonts.css">
     <link rel="stylesheet" href="/styles/CSS/navbar.css">
@@ -14,5 +14,64 @@
 </head>
 <body>
     
+    <div class="image-header-page-intro">
+        <header class="primary-header flex">
+            <div class="logo">
+                <h1>Galaxy Wars 2 : The Remake</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="primary-navigation flex" id="primary-navigation">
+                    <li class="active">
+                        <a href="/HTML/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Pages/Games/guides.html">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Pages/team.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--burger button-->
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </header>
+
+    <main class="container">
+        <section class="filters-container">
+            <div class="filters">
+                <span>Filters :</span>
+                <button id="all-filter-btn" class="filter-btn">All</button>
+                <button id="server-filter-btn" class="filter-btn">Server</button>
+                <button id="games-filter-btn" class="filter-btn">Games</button>
+            </div>
+        </section>
+        <section class="releases-grid-area">
+            <div class="release-block">
+                <a href="#">
+                    <div class="release-post">
+                        <span class="release-type">Games</span>
+                        <h3>Version 0.6</h3>
+                    </div>
+                    <div class="read-more_release-date">
+                        <div class="release-date">Monday, November 20th</div>
+                        <div class="read-more">
+                            <!-- icon here -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

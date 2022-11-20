@@ -4,7 +4,7 @@
 }
 
 .primary-header {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
   height: 6vh;
   align-items: center;
   justify-content: space-between;
@@ -45,10 +45,11 @@
 
 .menu-btn {
   display: none;
+  transform: rotate(180deg);
 }
 
 .menu-btn_burger {
-  width: 40px;
+  width: 25px;
   height: 4px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
@@ -59,7 +60,7 @@
 .menu-btn_burger::after {
   content: " ";
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 4px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
@@ -90,16 +91,19 @@
 }
 
 @media (max-width: 47em) {
+  .primary-header {
+    transition: all 500ms ease-in-out;
+  }
   .primary-navigation {
     z-index: 1000;
     gap: 3rem;
     margin: 0;
     position: fixed;
-    inset: 0 0 0 0;
+    inset: 6vh 0 0 0;
     flex-direction: column;
     padding: 15rem 10em;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgb(0, 0, 0);
     transform: translateX(100%);
     transition: transform 500ms ease-in-out;
   }
